@@ -1,0 +1,5 @@
+
+cliente = 1
+a = input("Ingrese una cantidad: ")
+resultado = 0
+while (cliente>):

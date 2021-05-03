@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clase Bootstrap</title>
+	<link rel = "stylesheet" href = "" crossorigin = "anonymous">
+	<script src = "" crossorigin = "anonymous"></script>
+	<scritp src = "" integrity = ""></scritp>
+	<style type = "text/css">
+		#label1 {
+			color: red !important;
+		}
+		.negritas{
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+
+	<div class = "container" id="contenedor">
+		<label>Nombre:</label>
+		<input id="nombre" tpye="text" class="form-control" name="">
+		<hr>
+		<button id = "btn bg-dark text-white"> Saludar</button>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			//FORMULARIO: nombre, edad, nacionalidad
+			// nombre tiene que existir (es decir que no este vacio)
+			//edad: si es mayor de edad le tenemos que decir que puede tomar, si no, que no puede tomer
+			//nacionalidad [mexicano, estadounidense]
+			//mexicano -> mayor de edad: 18 y mayores
+			// estadounidense -> mayor edad: 21 para arriba
+			// En mi aler me debe concatenar: "Hola! [nombre], puedes tomar!"--- "Lo siento! [nombre] no puedes tomar!"
+
+
+			$("#boton_saludar").click(function(){
+				var nombre = $("#nombre").val();
+				if(nombre ==""){
+					alert("VACIO");
+				}else
+				{
+					alert("Hola prro");
+				}
+				alert("Hola!"+ nombre);
+			});
+		});
+	</script>
+</body>
+</html>
